@@ -21,8 +21,8 @@ const backEndSkills = [{
   loc: require("../Assets/Images/python-logo.jpg"),
 },];
 const otherSkills = [{
-  name: 'C',
-  loc: require("../Assets/Images/c-logo.png"),
+  name: 'C++',
+  loc: require("../Assets/Images/cpp-logo.png"),
 }];
 
 function Skills(){
