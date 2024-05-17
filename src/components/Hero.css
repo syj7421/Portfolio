@@ -1,7 +1,7 @@
 .hero{
   height: 100vh; /* Full height of the viewport */
   width: 100%; /* Full width */
-  background-image: url('../../public/background-image-laptop.jpg'); /* Add your image path */
+  background-image: url('../Assets/Images/background-image-laptop.jpg'); /* Add your image path */
   background-size: cover; /* Ensure the image covers the full section */
   background-position: center;
   display: flex;
