@@ -1,0 +1,25 @@
+
+.about{
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+}
+
+.about-title{
+  margin-left: 6vw;
+  margin-right: 12vw;
+  width: 25vw;
+  text-align: center;
+  align-self: center;
+
+}
+
+.about-content{
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  padding: 1rem;
+  margin-right: 8vw;
+  width: 100%;
+
+}

@@ -1,0 +1,27 @@
+.navbar{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 775px;
+  height: 64px;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 2px 2px 30px 30px;
+  padding: 0;
+  margin-top: 0;
+  /* margin-right: 5%; */
+  /* shift nav bar to right, doesn't work when position is set fixed because it is removed from normal document, instead left, right, top bottom should be used */
+  /* margin-left: auto; */
+  position: fixed;
+  right: 5%;
+
+
+}
+
+.navbar li{
+  color: white;
+  margin: 0 50px;
+  font-size: 1.1rem;
+
+
+}
