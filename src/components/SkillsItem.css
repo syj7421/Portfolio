@@ -1,9 +1,12 @@
 
-.skills-section div{
+.skills{
+  padding: 30px 0;
+}
+.skills-item div{
   display: flex;
 }
 
-.skills-section h2{
+.skills-item h2{
   text-align: center;
 }
 

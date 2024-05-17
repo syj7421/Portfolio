@@ -1,8 +1,8 @@
 import React from "react";
-import "./SkillsSection.css";
+import "./SkillsItem.css";
 
-function SkillsSection(props){
-  return  <div className="skills-section">
+function SkillsItem(props){
+  return  <div className="skills-item">
     <h2>{props.title}</h2>
     <div>
       {props.skillsList.map((skill) => {
@@ -13,4 +13,4 @@ function SkillsSection(props){
 </div>
 }
 
-export default SkillsSection;
+export default SkillsItem;

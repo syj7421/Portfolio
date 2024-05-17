@@ -1,6 +1,7 @@
 import React from "react";
 import "./Skills.css";
-import SkillsSection from "./SkillsSection";
+import SkillsItem from "./SkillsItem";
+
 const frontEndSkills = [
 {
   name: 'Javascipt',
@@ -27,9 +28,9 @@ const otherSkills = [{
 
 function Skills(){
   return <div className="skills">
-    <SkillsSection title="Front-end" skillsList={frontEndSkills}/>
-    <SkillsSection title="Back-end" skillsList={backEndSkills}/>
-    <SkillsSection title="Others" skillsList={otherSkills}/>
+    <SkillsItem title="Front-end" skillsList={frontEndSkills}/>
+    <SkillsItem title="Back-end" skillsList={backEndSkills}/>
+    <SkillsItem title="Others" skillsList={otherSkills}/>
   </div>
 }
 
