@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import './NavBar.css';
 
-function NavBar(){
-  return <nav>
-    <ul className="navbar">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contact</a></li>
-    </ul>
-  </nav>
+function NavBar() {
+  const [activeLinkId, setActiveLinkId] = useState('');
+
+  const handleLinkClick = useCallback((id) => {
+    setActiveLinkId(id);
+  }, []);
+
+  const linkClass = (id) => activeLinkId === id ? 'active' : '';
+
+  return (
+    <nav>
+      <ul className="navbar">
+        {['hero', 'about', 'skills', 'projects', 'contacts'].map((id) => (
+          <li key={id}>
+            <a href={`#${id}`} onClick={() => handleLinkClick(id)} className={linkClass(id)}>
+              {id.toUpperCase()}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }
 
 export default NavBar;
