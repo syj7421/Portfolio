@@ -1,16 +1,18 @@
-.hero{
+#hero {
   height: 100vh; /* Full height of the viewport */
   width: 100%; /* Full width */
   background-image: url('../Assets/Images/background-image-laptop.jpg'); /* Add your image path */
   background-size: cover; /* Ensure the image covers the full section */
-  background-position: center;
+  background-position: center; /* Center the background image */
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center-align children vertically */
+  align-items: center; /* Center-align children horizontally */
+  position: relative; /* Needed for positioning the before pseudo-element */
 }
 
-.hero::before {
+/*::before is automatically inserted as the first child of parent node which is #hero*/
+#hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -21,13 +23,22 @@
   z-index: 1;
 }
 
+#hero h1 {
+  z-index: 2; /* Ensure it's above the overlay */
+  font-size: 55px; /* Adjust the size as necessary */
+  color: white; /* Text color */
+  margin-bottom: 20px; /* Space below h1 before the button */
+}
 
-.hero h1{
-  position: relative;
-  z-index: 2;
-  font-size: 2em; /* Adjust the size as necessary */
-  color: white;
-  font-size: 55px;
+#hero a {
+  z-index: 2; /* Ensure button is also above the overlay */
+  padding: 10px 20px; /* Example padding, adjust as needed */
+  font-size: 16px; /* Example font size for the button */
+  cursor: pointer; /* Changes the mouse cursor on hover */
+  background-color: transparent; /* Example background, adjust as needed */
+  color: white; /* Text color to match the h1 */
+  border: 2px solid white; /* Adds a border around the button */
+  text-decoration: none;
 }
 
 .cursor {
