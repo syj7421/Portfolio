@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const hero = document.querySelector('#hero'); // Ensure your Hero component has an id of 'hero'
+      const hero = document.querySelector('#home'); // Ensure your Hero component has an id of 'hero'
       const heroHeight = hero.offsetHeight;
       const heroTop = hero.getBoundingClientRect().top;
 

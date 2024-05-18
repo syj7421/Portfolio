@@ -12,7 +12,7 @@ function Hero() {
   }, []);
 
   return (
-    <div id="hero">
+    <div id="home">
       <h1>Welcome to Developer Sooyoung's Portfolio<span className={isActive ? "cursor" : "cursor hidden"}>|</span></h1>
       <a href="#about">Learn about me</a>
     </div>
