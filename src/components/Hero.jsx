@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Hero.css";
 
-function Hero(){
-  return <div className="hero" id="hero"><h1>Welcome to Sooyoung's Portfolio</h1></div>
+function Hero() {
+  const [isActive, setIsActive] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsActive(prevIsActive => !prevIsActive);
+    }, 500);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="hero" id="hero">
+      <h1>Welcome to Developer Sooyoung's Portfolio<span className={isActive ? "cursor" : "cursor hidden"}>|</span></h1>
+    </div>
+  );
 }
 
 export default Hero;
