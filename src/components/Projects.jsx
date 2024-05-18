@@ -3,7 +3,7 @@ import "./Projects.css";
 
 function Projects() {  
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h2>Projects</h2>
       <div className="grid-container">  {/* Make sure this is the grid container */}
         <div className="grid-item-1">wada</div>

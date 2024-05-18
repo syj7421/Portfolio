@@ -27,7 +27,7 @@ const otherSkills = [{
 }];
 
 function Skills(){
-  return <div className="skills">
+  return <div className="skills" id="skills">
     <SkillsItem title="Front-end" skillsList={frontEndSkills}/>
     <SkillsItem title="Back-end" skillsList={backEndSkills}/>
     <SkillsItem title="Others" skillsList={otherSkills}/>

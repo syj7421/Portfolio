@@ -13,7 +13,7 @@ const contactsList = [{
   img: require('../Assets/Images/linkedin-logo.png')
 }]
 function Contacts(){
-  return <div className="contacts">
+  return <div className="contacts" id="contacts">
     <h2>Contacts</h2>
     <ContactsItem contacts={contactsList}/>
   </div>
