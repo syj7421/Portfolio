@@ -3,18 +3,19 @@ import "./Projects.css";
 
 function Projects() {  
   return (
-    <div className="projects" id="projects">
-      <h2>Projects</h2>
-      <div className="grid-container">  {/* Make sure this is the grid container */}
-        <div className="grid-item-1">wada</div>
-        <div className="grid-item-2">dasd</div>
-        <div className="grid-item-3">dad</div>
-        <div className="grid-item-4">dsdsa</div>
-        <div className="grid-item-5">dasdas</div>
-        <div className="grid-item-6">sadasad</div>
-        <div className="grid-item-7">sdsadsad</div>
-        <div className="grid-item-8">sdasd</div>
-        <div className="grid-item-9">dasds</div>
+    <div id="projects">
+      <h1>Projects</h1>
+      <div className="bold-line">-</div>
+      <div className="grid-container"> 
+        <div className="card card-1"></div>
+        <div className="card card-2"></div>
+        <div className="card card-3"></div>
+        <div className="card card-4"></div>
+        <div className="card card-5"></div>
+        <div className="card card-6"></div>
+        <div className="card card-7"></div>
+        <div className="card card-8"></div>
+        <div className="card card-9"></div>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import Contacts from './components/Contacts';
 import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
+
 
 function App() {
   const [isHeroVisible, setIsHeroVisible] = useState(true);
@@ -36,7 +36,6 @@ function App() {
       {isHeroVisible ? null : <NavBar/>}
       <Hero/>
       <About/>
-      <Skills/>
       <Projects/>
       <Contacts/>
     </div>

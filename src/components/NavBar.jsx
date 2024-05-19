@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <nav>
       <ul className="navbar">
-        {['home', 'about', 'skills', 'projects', 'contacts'].map((id) => (
+        {['home', 'about', 'projects', 'contacts'].map((id) => (
           <li key={id}>
             <a href={`#${id}`} onClick={() => handleLinkClick(id)} className={linkClass(id)}>
               {id.toUpperCase()}
