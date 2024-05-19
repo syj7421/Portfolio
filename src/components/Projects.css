@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 60px;
+  padding-bottom: 100px;
 }
 
 
@@ -16,7 +18,7 @@
 }
 
 .card{
-  height: 250px;
+  height: 210px;
 }
 
 .card-1{
