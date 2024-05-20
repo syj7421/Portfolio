@@ -10,7 +10,8 @@
 
 .profile-skills-container{
   display: flex;
-  width: 60%;
+  width: 70%;
+
 }
 
 .profile-section{
@@ -29,7 +30,7 @@
 }
 
 .skill-charts{
-  width: 50%;
+  width: 40%;
 }
 .skill-chart {
   margin-bottom: 10px;
@@ -56,7 +57,22 @@
   width: var(--skill-level);
 }
 
+@media (max-width:1024px) {
+  .profile-skills-container{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
+  .profile-content{
+    width: 100%;
+  }
+
+  .skill-charts{
+    width: 70%;
+  }
+
+}
 
 
 
