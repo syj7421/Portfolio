@@ -25,7 +25,7 @@
 
 #home h1 {
   z-index: 2; /* Ensure it's above the overlay */
-  font-size: 55px; /* Adjust the size as necessary */
+  font-size: 35px; /* Adjust the size as necessary */
   color: white; /* Text color */
   margin-bottom: 20px; /* Space below h1 before the button */
   font-weight: 600;
@@ -50,6 +50,7 @@
   display: inline-block;
   transition: transform 0.3s ease;
   margin-left: 10px;
+  width: 25px;
 }
 
 #home a:hover{
@@ -70,4 +71,53 @@
 
 .hidden {
   opacity: 0;
+}
+
+@media (max-width: 1024px) {
+  #home h1 {
+    font-size: 25px; 
+  }
+  
+  #home a{
+    padding: 8px 18px; 
+    font-size: 14px; 
+  }
+
+  .arrow{
+    margin-left: 8px;
+    width: 23px;
+  }
+}
+
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 20px;
+  }
+
+  
+  #home a{
+    padding: 6px 16px; 
+    font-size: 12px; 
+  }
+
+  .arrow{
+    margin-left: 6px;
+    width: 21px;
+  }
+}
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  #home h1 {
+    font-size: 15px;
+  }
+
+  #home a{
+    padding: 5px 15px; 
+    font-size: 11px; 
+  }
+
+  .arrow{
+    margin-left: 5px;
+    width: 20px;
+  }
 }

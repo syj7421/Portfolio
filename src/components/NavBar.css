@@ -28,3 +28,9 @@
 .navbar a.active {
   color: rgb(1, 150, 173);
 }
+
+
+@media (max-width: 660px) {
+  
+}
+
