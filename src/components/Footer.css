@@ -17,7 +17,7 @@
 }
 
 .social-links a:hover {
-  color: #00bcd4; /* Change if you want hover effects */
+  color: rgb(1, 150, 173); /* Change if you want hover effects */
 }
 
 /* Responsive styling if needed */
@@ -26,3 +26,4 @@
     margin: 0 5px;
   }
 }
+

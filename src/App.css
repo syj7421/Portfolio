@@ -5,4 +5,6 @@ html, body {
   width: 100%; /* Prevent any horizontal overflow */
   /* scroll smoothly throughout the page */
   scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;  /* Bold weight for overall consistency */
 }
