@@ -26,7 +26,7 @@
 
 .navbar a:hover,
 .navbar a.active {
-  color: rgb(1, 150, 173);
+  color: #E91E63;
 }
 
 .hamburger {
@@ -80,7 +80,7 @@
 
 .hamburger-menu li a:hover,
 .hamburger-menu li a.active {
-  color: rgb(1, 150, 173);
+  color: #E91E63;
 }
 
 

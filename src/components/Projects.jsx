@@ -1,21 +1,49 @@
-import React from "react";
-import "./Projects.css";
+import React, { useState } from 'react';
+import './Projects.css';
 
-function Projects() {  
+function Projects() {
+  const cards = [
+    { title: 'Project1', languages: 'Python' },
+    { title: 'Project2', languages: 'Javascript' },
+    { title: 'Project3', languages: 'Typescript' },
+    { title: 'Project4', languages: 'React' },
+    { title: 'Project5', languages: 'Java' },
+    { title: 'Project6', languages: 'Kotlin' },
+    { title: 'Project7', languages: 'Go' },
+    { title: 'Project8', languages: 'Python' },
+    { title: 'Project9', languages: 'React' },
+  ];
+  const [hoverStates, setHoverStates] = useState(Array(cards.length).fill(false));
+
+  function handleMouseEnter(index) {
+    setHoverStates(current =>
+      current.map((state, i) => i === index ? true : state));
+  }
+
+  function handleMouseLeave(index) {
+    setHoverStates(current =>
+      current.map((state, i) => i === index ? false : state));
+  }
+
+  function test(){
+    console.log("Button clicked!");
+  }
   return (
     <div id="projects">
       <h1>Projects</h1>
       <div className="bold-line">-</div>
-      <div className="grid-container"> 
-        <div className="card card-1"></div>
-        <div className="card card-2"></div>
-        <div className="card card-3"></div>
-        <div className="card card-4"></div>
-        <div className="card card-5"></div>
-        <div className="card card-6"></div>
-        <div className="card card-7"></div>
-        <div className="card card-8"></div>
-        <div className="card card-9"></div>
+      <div className="grid-container">
+      {cards.map((card, i) => (
+  <div key={i} className={`card card-${i}`}
+       onMouseEnter={() => handleMouseEnter(i)}
+       onMouseLeave={() => handleMouseLeave(i)}>
+    <div className="card-content" style={{ opacity: hoverStates[i] ? 1 : 0 }}>
+      <p className="title">{card.title}</p>
+      <p className="languages">{card.languages}</p>
+      <button onClick={test}>LEARN MORE</button>
+    </div>
+  </div>
+))}
       </div>
     </div>
   );
