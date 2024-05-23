@@ -25,25 +25,19 @@ function Projects() {
       current.map((state, i) => i === index ? false : state));
   }
 
-  function test(){
-    console.log("Button clicked!");
-  }
   return (
-    <div id="projects">
-      <h1>Projects</h1>
-      <div className="bold-line">-</div>
-      <div className="grid-container">
+  <div id="projects">
+    <h1>Projects</h1>
+    <div className="grid-container">
       {cards.map((card, i) => (
-  <div key={i} className={`card card-${i}`}
-       onMouseEnter={() => handleMouseEnter(i)}
-       onMouseLeave={() => handleMouseLeave(i)}>
-    <div className="card-content" style={{ opacity: hoverStates[i] ? 1 : 0 }}>
-      <p className="title">{card.title}</p>
-      <p className="languages">{card.languages}</p>
-      <button onClick={test}>LEARN MORE</button>
+    <div key={i} className={`card card-${i}`} onMouseEnter={() => handleMouseEnter(i)} onMouseLeave={() => handleMouseLeave(i)}>
+      <div className="card-content" style={{ opacity: hoverStates[i] ? 1 : 0 }}>
+        <p className="title">{card.title}</p>
+        <p className="languages">{card.languages}</p>
+        <button>LEARN MORE</button>
+      </div>
     </div>
-  </div>
-))}
+      ))}
       </div>
     </div>
   );

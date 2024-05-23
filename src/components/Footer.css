@@ -4,15 +4,22 @@
   padding: 20px 0;
   text-align: center;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-links {
   margin-bottom: 10px;
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+  
 }
 
 .social-links a {
   color: white; /* Icon color */
-  margin: 0 10px; /* Spacing between icons */
   font-size: 20px; /* Icon size */
 }
 

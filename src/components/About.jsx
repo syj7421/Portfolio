@@ -2,28 +2,26 @@ import React from "react";
 import "./About.css";
 
 const skills = [
-  { skill: "CSS", level: 80 },
-  { skill: "HTML", level: 75 },
-  { skill: "React", level: 70 },
-  { skill: "JavaScript", level: 85 },
-  { skill: "NextJS", level: 60 },
-  { skill: "Node.js", level: 65 },
-  { skill: "Ruby/Rails", level: 50 },
-  { skill: "Python", level: 55 },
-  { skill: "Figma", level: 45 },
-  { skill: "Illustrator", level: 40 }
+  { skill: "Python", level: 90 },
+  { skill: "Javascript", level: 90 },
+  { skill: "Typescript", level: 90 },
+  { skill: "React", level: 90 },
+  { skill: "Node.js", level: 80 },
+  { skill: "Django", level: 80 },
+  { skill: "Flask", level: 80 },
+  { skill: "C#", level: 70 },
+  { skill: "Kotlin", level: 60 },
+  { skill: "Swift", level: 60 }
 ];
 
 function About() {
   return <div id="about">
     <h1 className="about-header">ABOUT</h1>
-    <div className="bold-line">-</div>
     <div className="profile-skills-container">
-      <div className="profile-section">
-        <img src={require('../Assets/Images/github-logo.png')} alt="Profile"/>
+      <div className="profile">
+        <img src={require('../Assets/Images/profile_pic.jpg')} alt="Profile"/>
         <p className="profile-title">Who's this guy?</p>
-        <p className="profile-content">I'm a Front-End Developer for ChowNow in Los Angeles, CA.
-          I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
+        <p className="profile-content">Originally from Seoul, Korea and raised in Melbourne, I am a Fullstack Developer with a deep interest in UI effects, animations, and cloud computing. I am committed to enhancing user experiences through continuous learning and innovation.</p>
       </div>
       <div className="skill-charts">
         {skills.map(skill => (

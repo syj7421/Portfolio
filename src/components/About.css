@@ -3,26 +3,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
+.about-header{
+  color: rgb(68, 70, 73);
+}
 
 .profile-skills-container{
   display: flex;
-  width: 70%;
+  width: 1024px;
 
 }
 
-.profile-section{
+.profile{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 50%;
 }
 
-.profile-section img{
-  width: 300px;
+.profile img{
+  width: 260px;
+  border-radius: 5px;
 }
 
 .profile-content{
@@ -30,7 +35,9 @@
 }
 
 .skill-charts{
+
   width: 40%;
+
 }
 .skill-chart {
   margin-bottom: 10px;
@@ -60,9 +67,12 @@
 @media (max-width:1024px) {
   .profile-skills-container{
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     align-items: center;
-    width: 602px;
+  }
+
+  .profile{
+    width: 80%;
   }
 
   .profile-content{
@@ -70,7 +80,7 @@
   }
 
   .skill-charts{
-    width: 70%;
+    width: 90%;
   }
 
 }

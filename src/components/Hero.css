@@ -108,7 +108,7 @@
 /* Small screens (phones) */
 @media (max-width: 480px) {
   #home h1 {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   #home a{
