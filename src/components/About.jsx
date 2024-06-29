@@ -21,7 +21,7 @@ function About() {
       <div className="profile">
         <img src={require('../Assets/Images/profile_pic.jpg')} alt="Profile"/>
         <p className="profile-title">Who's this guy?</p>
-        <p className="profile-content">Originally from Seoul, Korea and raised in Melbourne, I am a Fullstack Developer with a deep interest in UI effects, animations, and cloud computing. I am committed to enhancing user experiences through continuous learning and innovation.</p>
+        <p className="profile-content">I'm a Full-stack Developer and Cloud Engineer, born in Seoul, South Korea, and raised in Melbourne, Australia. I have a deep passion for creating applications that are both innovative and useful for people.</p>
       </div>
       <div className="skill-charts">
         {skills.map(skill => (
